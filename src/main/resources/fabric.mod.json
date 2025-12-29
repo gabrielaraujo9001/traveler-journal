@@ -1,0 +1,36 @@
+{
+	"schemaVersion": 1,
+	"id": "traveler-journal",
+	"version": "${version}",
+	"name": "Traveler Journal",
+	"description": "A Minecraft Fabric mod for saving favorite locations and their coordinates",
+	"authors": [
+		"Gabriel Araujo"
+	],
+	"contact": {
+		"sources": "https://github.com/gabrielaraujo9001/traveler-journal"
+	},
+	"license": "MIT",
+	"icon": "assets/traveler-journal/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.gabrielaraujo9001.travelerjournal.TravelerJournal"
+		],
+		"fabric-datagen": [
+			"com.gabrielaraujo9001.travelerjournal.TravelerJournalDataGenerator"
+		],
+		"client": [
+			"com.gabrielaraujo9001.travelerjournal.TravelerJournalClient"
+		]
+	},
+	"mixins": [
+		"traveler-journal.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.18.4",
+		"minecraft": "~1.21.11",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
